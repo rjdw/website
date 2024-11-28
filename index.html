@@ -5,23 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
     <style>
-        /* Ensure full-screen usage */
         html, body {
             margin: 0;
             padding: 0;
             height: 100%;
-            overflow: hidden; /* Prevent scrollbars */
+            overflow: hidden;
         }
-        embed {
+        iframe {
             display: block;
-            width: 100%;
-            height: 100%;
+            width: 100vw; /* Use viewport width */
+            height: 100vh; /* Use viewport height */
             border: none;
         }
     </style>
 </head>
 <body>
-    <embed src="cv.pdf" type="application/pdf">
+    <iframe src="cv.pdf"></iframe>
 </body>
 </html>
 
